@@ -1,9 +1,10 @@
+//Testbench for Sincos.v
 module Sincos_tb  ; 
-parameter datasize      = 10;    
-parameter Bus_size_in   = 16 - 1;
-parameter Bus_size_out  = 16 - 1;
-parameter B_x_g_aa  = 7 ;
-parameter B_x_g_ba  = 7 ; 
+  parameter datasize      = 10;    
+  parameter Bus_size_in   = 16 - 1;
+  parameter Bus_size_out  = 16 - 1;
+  parameter B_x_g_aa  = 7 ;
+  parameter B_x_g_ba  = 7 ; 
 
   reg   [Bus_size_in:0]   sincos_in; 
   reg   [Bus_size_in:0]   data_in[0:datasize-1];
@@ -17,12 +18,12 @@ parameter B_x_g_ba  = 7 ;
   integer i;
   
   
-  Sincos    #( B_x_g_aa , B_x_g_ba  )
+  Sincos  #( B_x_g_aa , B_x_g_ba )
    DUT  ( 
-       .sincos_out2 (sincos_out2 ) ,
-      .sincos_in (sincos_in ) ,
-      .clk (clk ) ,
-      .sincos_out1 (sincos_out1 ) ); 
+       .sincos_out2 (sincos_out2) ,
+      .sincos_in (sincos_in),
+      .clk (clk),
+      .sincos_out1 (sincos_out1)); 
       
     task passTest;
         input [Bus_size_out:0] datav1,datav2,datam1,datam2;
@@ -53,8 +54,8 @@ parameter B_x_g_ba  = 7 ;
         else
            $display("%d failed",datasize-passed);
     endtask    
-initial
-  begin
+  initial
+    begin
     	   clk = 1'b0;
         rst = 1'b1;
         passed = 0;
@@ -64,10 +65,10 @@ initial
         $readmemb("Sincos_test_out1.dat",data_out1);
         $readmemb("Sincos_test_out2.dat",data_out2);
         #(datasize*2+2) allPassed(passed);
-  end
-    always #1 clk <= ~clk;
+    end
+  always #1 clk <= ~clk;
       
-      always @ (posedge clk or negedge rst)
+  always @ (posedge clk or negedge rst)
       begin
         if(!rst)
           begin
@@ -81,7 +82,7 @@ initial
           end
       end
       
-      always @(i)
+  always @(i)
       begin
         passTest(sincos_out1,sincos_out2,data_out1[i],data_out2[i],i-1,passed);
       end

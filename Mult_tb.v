@@ -1,6 +1,7 @@
+//Testbench for Mult.v
 `timescale  1 ns / 10 ps
 module Mult_tb  ; 
-parameter datasize      = 10;    
+  parameter datasize      = 10;//test 10 samples  
 
   reg   [16:0]  mult_in1   ; 
   reg   [15:0]  mult_in2   ; 
@@ -28,9 +29,9 @@ parameter datasize      = 10;
           end
         else
             $display ("%d Failed: %b should be %b",i,datav,datam);
-    endtask
+  endtask
     
-    task allPassed;
+  task allPassed;
         input passed;
         integer passed;
         
@@ -38,16 +39,16 @@ parameter datasize      = 10;
            $display("All passed");
         else
            $display("%d failed",datasize-passed+1);
-    endtask    
+  endtask    
  
     
-Mult  DUT  ( 
+  Mult  DUT  ( 
       .clk(clk),
       .mult_out (mult_out ) ,
       .mult_in1 (mult_in1 ) ,
       .mult_in2 (mult_in2 ) ); 
-initial
-  begin
+  initial
+    begin
     	   clk = 1'b0;
         rst = 1'b1;
         passed = 0;
@@ -57,11 +58,11 @@ initial
         $readmemb("mult_test_in2.dat",data_in2);
         $readmemb("mult_test_out.dat",data_out);
         #(datasize*2+2) allPassed(passed);
-  end
+    end
       
-      always #1 clk <= !clk;
+  always #1 clk <= !clk;
       
-      always @ (posedge clk or negedge rst)
+  always @ (posedge clk or negedge rst)
       begin
         if(!rst)
           begin
@@ -77,11 +78,10 @@ initial
           end
       end
     
-      always @(i)
+  always @(i)
       begin
         passTest(mult_out,data_out[i],i,passed);
       end
-  
 endmodule
 
 

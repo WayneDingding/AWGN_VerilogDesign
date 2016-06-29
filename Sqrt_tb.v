@@ -1,12 +1,12 @@
+//Testbench for Sqrt.v
 `timescale  1 ns / 10 ps
 module Sqrt_tb  ; 
 
- 
-parameter datasize      = 10;    
-parameter Bus_size_in   = 31 - 1;
-parameter Bus_size_out  = 17 - 1;
-parameter B_x_e_a       = 8 ; 
-parameter B_x_f_a       = 6;
+  parameter datasize      = 10;    
+  parameter Bus_size_in   = 31 - 1;
+  parameter Bus_size_out  = 17 - 1;
+  parameter B_x_e_a       = 8 ; 
+  parameter B_x_f_a       = 6;
 
   reg   [Bus_size_in:0]   sqrt_in; 
   reg   [Bus_size_in:0]   data_in[0:datasize-1];
@@ -32,9 +32,9 @@ parameter B_x_f_a       = 6;
           end
         else
             $display ("%d Failed: %b should be %b",i,datav,datam);
-    endtask
+  endtask
     
-    task allPassed;
+  task allPassed;
         input passed;
         integer passed;
         
@@ -42,32 +42,31 @@ parameter B_x_f_a       = 6;
            $display("All passed");
         else
            $display("%d failed",datasize-passed+1);
-    endtask    
+  endtask    
     
-  Sqrt    #(
-          .Bus_size (Bus_size_in), 
-          .B_x_f_a (B_x_f_a))
+  Sqrt #(
+        .Bus_size (Bus_size_in), 
+        .B_x_f_a (B_x_f_a))
     DUT( 
-      .sqrt_out (sqrt_out ) ,
-      .sqrt_in (sqrt_in ) ,
-      .clk (clk ));     
+        .sqrt_out (sqrt_out) ,
+        .sqrt_in (sqrt_in) ,
+        .clk (clk));     
   
-initial
-  begin
+  initial
+    begin
     	   clk = 1'b0;
         rst = 1'b1;
         passed = 0;
         #2 rst = 1'b0;
         #2 rst = 1'b1;        
         $readmemb("Sqrt_test_in.dat",data_in);
-//        $readmemb("Sqrt_test_out.dat",data_out);
         $readmemb("Sqrt_test_out.dat",data_out);
         #(datasize*2+2) allPassed(passed);
-  end
+    end
       
-      always #1 clk <= !clk;
+  always #1 clk <= !clk;
       
-      always @ (posedge clk or negedge rst)
+  always @ (posedge clk or negedge rst)
       begin
         if(!rst)
           begin
@@ -81,7 +80,7 @@ initial
           end
       end
     
-      always @(i)
+  always @(i)
       begin
         passTest(sqrt_out,data_out[i],i-1,passed);
       end

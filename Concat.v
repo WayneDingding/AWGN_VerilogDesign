@@ -1,4 +1,4 @@
-//concat module is a 
+//This module is use for concat numbers 
 module Concat(concat_in1,concat_in2,concat_out);
   parameter size1=32;
   parameter size2=16;

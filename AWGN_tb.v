@@ -1,12 +1,12 @@
+//Testbench for AWGN
 `timescale  1 ns / 10 ps
 module AWGN_tb();
-parameter datasize=10000;
-parameter Bus_size_in   = 32 - 1;
-parameter Bus_size_out  = 16 - 1;
+    parameter datasize=10000;
+    parameter Bus_size_in   = 32 - 1;
+    parameter Bus_size_out  = 16 - 1;
 
     reg clk;
     reg reset;
-//    wire [47:0] temp;
     reg [Bus_size_in:0] data_in1[datasize-1:0],data_in2[datasize-1:0];
     reg [Bus_size_in:0] data_in3[datasize-1:0],data_in4[datasize-1:0];
     reg [Bus_size_in:0] data_in5[datasize-1:0],data_in6[datasize-1:0];
@@ -57,9 +57,8 @@ parameter Bus_size_out  = 16 - 1;
     .s5(in5),
     .awgn1(awgn1),
     .awgn2(awgn2)
-//    .temp(temp)
     );
-    
+  //read input data  
     initial
     begin
        write_out_file = $fopen("verilog_data_out.dat","w");
@@ -111,7 +110,6 @@ parameter Bus_size_out  = 16 - 1;
     always @(i)
     begin
        passTest(awgn1,awgn2,data_out1[i],data_out2[i],i,passed);
-// passTest(temp,0,data_out1[i],0,i,passed);
     end
 endmodule
 

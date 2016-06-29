@@ -1,9 +1,9 @@
-module AWGN(clk,reset,s0,s1,s2,s3,s4,s5,awgn1,awgn2);//,temp);
+//This model is an AWGN generator
+module AWGN(clk,reset,s0,s1,s2,s3,s4,s5,awgn1,awgn2);
   input    clk;
   input    reset;
-  input  [31:0] s0,s1,s2,s3,s4,s5;
-  output [15:0] awgn1,awgn2;
-//output [47:0] temp;
+  input   [31:0] s0,s1,s2,s3,s4,s5;
+  output  [15:0] awgn1,awgn2;
   wire    [31:0] taus1_concat,taus2_split;
   wire    [15:0] split_concat;
   wire    [47:0] concat_log;
@@ -11,8 +11,6 @@ module AWGN(clk,reset,s0,s1,s2,s3,s4,s5,awgn1,awgn2);//,temp);
   wire    [30:0] log_sqrt;
   wire    [16:0] sqrt_mult;
   wire    [15:0] sincos_mult1,sincos_mult2;
-
-      
     
     Tausworthe T1(
     .clk(clk),
@@ -70,5 +68,4 @@ module AWGN(clk,reset,s0,s1,s2,s3,s4,s5,awgn1,awgn2);//,temp);
     .mult_in1(sqrt_mult), 
     .mult_in2(sincos_mult2),
     .mult_out(awgn2));
-//   assign temp=awgn1;
   endmodule
