@@ -1,0 +1,271 @@
+m255
+K3
+13
+cModel Technology
+dC:\Program Files\modeltech64_10.1c\examples
+vAWGN
+VoLXjhFLKEV4oLhBYAXH4C2
+r1
+31
+IB?0@]2kLGLS8g?oW^IBz52
+Z0 dC:\Users\dingw_000\Desktop\Verilog Design
+w1467177510
+8C:/Users/dingw_000/Desktop/Verilog Design/AWGN.v
+FC:/Users/dingw_000/Desktop/Verilog Design/AWGN.v
+L0 1
+Z1 OL;L;10.1c;51
+Z2 o-work work -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+n@a@w@g@n
+!s85 0
+!s100 Y2k:_Q[ehYXz_oGnB8nVW1
+!s108 1467178298.367000
+!s107 C:/Users/dingw_000/Desktop/Verilog Design/AWGN.v|
+!s90 -reportprogress|300|-work|work|-vopt|C:/Users/dingw_000/Desktop/Verilog Design/AWGN.v|
+!i10b 1
+vAWGN_tb
+V5gnH]]WE:?2g=z@h]=OQS2
+r1
+31
+Ib0ml?^gU@iW:aKneme2Qg3
+Z3 dC:\Users\dingw_000\Desktop\Verilog Design
+w1467177739
+8C:/Users/dingw_000/Desktop/Verilog Design/AWGN_tb.v
+FC:/Users/dingw_000/Desktop/Verilog Design/AWGN_tb.v
+L0 2
+R1
+R2
+n@a@w@g@n_tb
+!s85 0
+!s100 3cGGFD1jlcXPgbbldNSQ_3
+!s108 1467178298.430000
+!s107 C:/Users/dingw_000/Desktop/Verilog Design/AWGN_tb.v|
+!s90 -reportprogress|300|-work|work|-vopt|C:/Users/dingw_000/Desktop/Verilog Design/AWGN_tb.v|
+!i10b 1
+vConcat
+VGdQ];2W7ZfF@=EA;P<`0z3
+r1
+31
+I;>d_ElABcn`P<AAX_Flmb2
+R3
+w1466705642
+8C:/Users/dingw_000/Desktop/Verilog Design/Concat.v
+FC:/Users/dingw_000/Desktop/Verilog Design/Concat.v
+L0 2
+R1
+R2
+n@concat
+!s85 0
+!s100 4H2ZU;>9EdHZBPHLKgbG;3
+!s108 1467178298.508000
+!s107 C:/Users/dingw_000/Desktop/Verilog Design/Concat.v|
+!s90 -reportprogress|300|-work|work|-vopt|C:/Users/dingw_000/Desktop/Verilog Design/Concat.v|
+!i10b 1
+vLog
+V[:zh>XMFWn5joFk@IC>zJ2
+r1
+31
+IBmOakI=SWnN]]`J=N_R7C2
+R3
+w1467169948
+8C:/Users/dingw_000/Desktop/Verilog Design/Log.v
+FC:/Users/dingw_000/Desktop/Verilog Design/Log.v
+L0 1
+R1
+R2
+n@log
+!s85 0
+!s100 OUj12:A^A;MHmZUb^LOO]1
+!s108 1467178298.586000
+!s107 C:/Users/dingw_000/Desktop/Verilog Design/Log.v|
+!s90 -reportprogress|300|-work|work|-vopt|C:/Users/dingw_000/Desktop/Verilog Design/Log.v|
+!i10b 1
+vLog_tb
+IHMBYz6m:P4no0jIEQ8F7d3
+V@kW`4G5JdJ4748jAoh@R=3
+R3
+w1467169794
+8C:/Users/dingw_000/Desktop/Verilog Design/Log_tb.v
+FC:/Users/dingw_000/Desktop/Verilog Design/Log_tb.v
+L0 2
+R1
+r1
+31
+R2
+n@log_tb
+!s100 _Y@ZjG`^EJREd7i48AD>N0
+!s108 1467178298.649000
+!s107 C:/Users/dingw_000/Desktop/Verilog Design/Log_tb.v|
+!s90 -reportprogress|300|-work|work|-vopt|C:/Users/dingw_000/Desktop/Verilog Design/Log_tb.v|
+!i10b 1
+!s85 0
+vMult
+Vlc;FI6Gh]V1@VfBR;;^5X0
+r1
+!s85 0
+31
+IL1Y23chk<0K>[S8^;Uz=@0
+R3
+w1467174931
+8C:/Users/dingw_000/Desktop/Verilog Design/Mult.v
+FC:/Users/dingw_000/Desktop/Verilog Design/Mult.v
+L0 1
+R1
+R2
+n@mult
+!s100 2>>;1oVUEaHBY0Niz35ne3
+!s108 1467178298.727000
+!s107 C:/Users/dingw_000/Desktop/Verilog Design/Mult.v|
+!s90 -reportprogress|300|-work|work|-vopt|C:/Users/dingw_000/Desktop/Verilog Design/Mult.v|
+!i10b 1
+vMult_tb
+IOTb`NUB;RgRBoDj?PmJIL1
+VH=c@clZ@jeVbEeQ]>@2[93
+R3
+w1467163005
+8C:/Users/dingw_000/Desktop/Verilog Design/Mult_tb.v
+FC:/Users/dingw_000/Desktop/Verilog Design/Mult_tb.v
+L0 2
+R1
+r1
+31
+R2
+n@mult_tb
+!s100 9kBXT`E;ae0hL?eBmhjMk0
+!s108 1467178298.805000
+!s107 C:/Users/dingw_000/Desktop/Verilog Design/Mult_tb.v|
+!s90 -reportprogress|300|-work|work|-vopt|C:/Users/dingw_000/Desktop/Verilog Design/Mult_tb.v|
+!i10b 1
+!s85 0
+vSincos
+ViWAe4BYfLQlz:o<LM:NWM1
+r1
+31
+I>o2fHQ1go7ed8Yf^M2AGj0
+R3
+w1467173834
+8C:/Users/dingw_000/Desktop/Verilog Design/Sincos.v
+FC:/Users/dingw_000/Desktop/Verilog Design/Sincos.v
+L0 1
+R1
+R2
+n@sincos
+!s85 0
+!s100 C[d?IQU83YO]=ImA1EgoV0
+!s108 1467178298.883000
+!s107 C:/Users/dingw_000/Desktop/Verilog Design/Sincos.v|
+!s90 -reportprogress|300|-work|work|-vopt|C:/Users/dingw_000/Desktop/Verilog Design/Sincos.v|
+!i10b 1
+vSincos_tb
+I<EJLfWBk0E`K^MX;S9Y6o2
+VaCZb@4]<2@DJ=`lR?NdbS1
+R3
+w1467146340
+8C:/Users/dingw_000/Desktop/Verilog Design/Sincos_tb.v
+FC:/Users/dingw_000/Desktop/Verilog Design/Sincos_tb.v
+L0 1
+R1
+r1
+31
+R2
+n@sincos_tb
+!s100 BFFinEd?3KKQ>7UeK7dZF0
+!s108 1467178298.961000
+!s107 C:/Users/dingw_000/Desktop/Verilog Design/Sincos_tb.v|
+!s90 -reportprogress|300|-work|work|-vopt|C:/Users/dingw_000/Desktop/Verilog Design/Sincos_tb.v|
+!i10b 1
+!s85 0
+vSplit
+VPHoD2cH64S:ETDo_XUfAE0
+r1
+31
+IK@5QM2Ri@@WZF_9BPQ73^1
+R3
+w1466705669
+8C:/Users/dingw_000/Desktop/Verilog Design/Split.v
+FC:/Users/dingw_000/Desktop/Verilog Design/Split.v
+L0 2
+R1
+R2
+n@split
+!s85 0
+!s100 l5:UmoB_nAzO^<mzLmSWh2
+!s108 1467178299.024000
+!s107 C:/Users/dingw_000/Desktop/Verilog Design/Split.v|
+!s90 -reportprogress|300|-work|work|-vopt|C:/Users/dingw_000/Desktop/Verilog Design/Split.v|
+!i10b 1
+vSqrt
+VJ:XI8^K@V62ADU@9ACX<01
+r1
+31
+I3=4lX0i54TY>YWzhLI78m2
+R3
+w1467167046
+8C:/Users/dingw_000/Desktop/Verilog Design/Sqrt.v
+FC:/Users/dingw_000/Desktop/Verilog Design/Sqrt.v
+L0 1
+R1
+R2
+n@sqrt
+!s85 0
+!s100 f`j;zUF>[ddA]0mDKc7Qc3
+!s108 1467178299.102000
+!s107 C:/Users/dingw_000/Desktop/Verilog Design/Sqrt.v|
+!s90 -reportprogress|300|-work|work|-vopt|C:/Users/dingw_000/Desktop/Verilog Design/Sqrt.v|
+!i10b 1
+vSqrt_tb
+I:6P]z_ccjCFha^a<_ogh72
+Vj5IFfIZfB<mh3[GG>HVEz1
+R3
+w1467067721
+8C:/Users/dingw_000/Desktop/Verilog Design/Sqrt_tb.v
+FC:/Users/dingw_000/Desktop/Verilog Design/Sqrt_tb.v
+L0 2
+R1
+r1
+31
+R2
+n@sqrt_tb
+!s100 klmz44YJ9[i`lm=UC0?[L0
+!s108 1467178299.180000
+!s107 C:/Users/dingw_000/Desktop/Verilog Design/Sqrt_tb.v|
+!s90 -reportprogress|300|-work|work|-vopt|C:/Users/dingw_000/Desktop/Verilog Design/Sqrt_tb.v|
+!i10b 1
+!s85 0
+vTausworthe
+VUBMYo^`XZ8GA::2;MT[0k2
+r1
+31
+I?jl;G]IWomUhUY=LjoGRM3
+R3
+w1467166767
+8C:/Users/dingw_000/Desktop/Verilog Design/Tausworthe.v
+FC:/Users/dingw_000/Desktop/Verilog Design/Tausworthe.v
+L0 2
+R1
+R2
+n@tausworthe
+!s85 0
+!s100 Wl_N2XCkU=_Eo4miodGF23
+!s108 1467178299.258000
+!s107 C:/Users/dingw_000/Desktop/Verilog Design/Tausworthe.v|
+!s90 -reportprogress|300|-work|work|-vopt|C:/Users/dingw_000/Desktop/Verilog Design/Tausworthe.v|
+!i10b 1
+vTausworthe_tb
+I2Z5Jke^VFo`OzXQi8CU630
+VL7_9eaZe?bVIkn:oG6G6n0
+R3
+w1467146797
+8C:/Users/dingw_000/Desktop/Verilog Design/Tausworthe_tb.v
+FC:/Users/dingw_000/Desktop/Verilog Design/Tausworthe_tb.v
+L0 1
+R1
+r1
+31
+R2
+n@tausworthe_tb
+!i10b 1
+!s100 _[X<6DUC;[7?A3W>=[ESd3
+!s85 0
+!s108 1467178299.321000
+!s107 C:/Users/dingw_000/Desktop/Verilog Design/Tausworthe_tb.v|
+!s90 -reportprogress|300|-work|work|-vopt|C:/Users/dingw_000/Desktop/Verilog Design/Tausworthe_tb.v|
